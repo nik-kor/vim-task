@@ -6,13 +6,13 @@ syntax keyword taskKeyword New new Working working Done done Todo TODO todo
 
 syntax match taskWorkingIcon "^-" contained
 syntax match taskWorkingIcon "^\s*-" contained
-syntax match taskDoneIcon "^✓" contained
-syntax match taskDoneIcon "^\s*✓" contained
+syntax match taskDoneIcon "^+" contained
+syntax match taskDoneIcon "^\s*+" contained
 
 syntax match taskWorkingItem "^-.*" contains=taskWorkingIcon,taskKeyword
 syntax match taskWorkingItem "^\s*-.*" contains=taskWorkingIcon,taskKeyword
-syntax match taskDoneItem "^✓.*" contains=taskDoneIcon,taskKeyword
-syntax match taskDoneItem "^\s*✓.*" contains=taskDoneIcon,taskKeyword
+syntax match taskDoneItem "^+.*" contains=taskDoneIcon,taskKeyword
+syntax match taskDoneItem "^\s*+.*" contains=taskDoneIcon,taskKeyword
 
 highlight taskKeyword guifg=#96CBFE guibg=NONE gui=NONE ctermfg=blue ctermbg=NONE cterm=NONE
 
